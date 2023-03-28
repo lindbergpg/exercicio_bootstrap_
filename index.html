@@ -12,11 +12,33 @@
             background-color: #2a2828;
         }
 
-        img {
-            width: 100%;
+        h1 {
+            margin: 0;
+            color: #fff;
         }
 
-        .container {
+        h2 {
+            color: #fff;
+        }
+
+        header {
+            padding: 10px 0;
+            background-color: #2a2828;
+        }
+
+        .navbar {
+            padding: 0;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        .navbar-nav .nav-link.active {
+            color: #fff;
+        }
+
+        .notc {
             margin-top: 36px;
         }
 
@@ -30,39 +52,68 @@
         }
 
         .card-subtitle img {
+            width: 100%;
             height: 220px;
             margin-bottom: 14px;
+            border-radius: 6px;
         }
 
     </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <div class="navbar navbar-expand-lg">
+                <h1>Portal Cripto</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Noticias</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <div class="cont">
-        <div class="carousel slide" data-bs-ride="carousel" id="carousel-top">
+        <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel-top">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="4000">
-                    <img src="./img/img_01.jpg" alt="">
+                    <img class="d-block w-100" src="./img/img_01.jpg" alt="">
                 </div>
                 <div class="carousel-item" data-bs-interval="4000">
-                    <img src="./img/img_02.jpg" alt="">
+                    <img class="d-block w-100" src="./img/img_02.jpg" alt="">
                 </div>
                 <div class="carousel-item" data-bs-interval="4000">
-                    <img src="./img/img_03.jpg" alt="">
+                    <img class="d-block w-100" src="./img/img_03.jpg" alt="">
                 </div>
                 <div class="carousel-item" data-bs-interval="4000">
-                    <img src="./img/img_04.jpg" alt="">
+                    <img class="d-block w-100" src="./img/img_04.jpg" alt="">
                 </div>
-                <button class="carousel-control-prev" data-bs-target="#carousel-top" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" data-bs-target="#carousel-top" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+            </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#carousel-top" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#carousel-top" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#carousel-top" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-top" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-top" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carousel-top" data-bs-slide-to="3"></button>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container notc">
         <div class="row">
+            <h2>Noticias</h2>
             <div class="col-4">
                 <div class="card text-bg-dark">
                     <div class="card-header">
@@ -81,7 +132,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-success">Ler mais+</button>
+                        <button class="btn btn-primary">Ler mais+</button>
                     </div>
                 </div>
             </div>
@@ -103,7 +154,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-success">Ler mais+</button>
+                        <button class="btn btn-primary">Ler mais+</button>
                     </div>
                 </div>
             </div>
@@ -125,7 +176,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-success">Ler mais+</button>
+                        <button class="btn btn-primary">Ler mais+</button>
                     </div>
                 </div>
             </div>
@@ -148,7 +199,7 @@
                         </div>
                     </div>
                     <div class="card-footer">
-                        <button class="btn btn-success">Ler mais+</button>
+                        <button class="btn btn-primary">Ler mais+</button>
                     </div>
                 </div>
             </div>
