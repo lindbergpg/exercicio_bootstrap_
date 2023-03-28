@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio bootstrap</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        body {
+            overflow-x: hidden;
+            background-color: #2a2828;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .container {
+            margin-top: 36px;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: #2a2828;
+        }
+
+        .col-4 {
+            margin-bottom: 22px;
+        }
+
+        .card-subtitle img {
+            height: 220px;
+            margin-bottom: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel-top">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="./img/img_01.jpg" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./img/img_02.jpg" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./img/img_03.jpg" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img src="./img/img_04.jpg" alt="">
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carousel-top" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carousel-top" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h3>EDUCAÇÃO FINANCEIRA</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h4>Criptomoeda:</h4>
+                        </div>
+                        <div class="card-subtitle">
+                            <h5>o que é, como funciona e se vale investir</h5>
+                            <img src="./img/img_card_01.jpeg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat numquam nostrum mollitia eaque voluptate blanditiis animi explicabo neque labore debitis dignissimos non porro sequi, itaque, quidem modi. Sint, enim animi?</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success">Ler mais+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h3>MERCADO INTERNO</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h4>Ibovespa:</h4>
+                        </div>
+                        <div class="card-subtitle">
+                            <h5>índice mantém recuperação na expectativa do arcabouço fiscal</h5>
+                            <img src="./img/img_card_02.jpeg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat numquam nostrum mollitia eaque voluptate blanditiis animi explicabo neque labore debitis dignissimos non porro sequi, itaque, quidem modi. Sint, enim animi?</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success">Ler mais+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h3>BLOCKCHAIN</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h4>Criptomoeda:</h4>
+                        </div>
+                        <div class="card-subtitle">
+                            <h5>Polygon (MATIC) lança solução de escalabilidade para Ethereum (ETH)</h5>
+                            <img src="./img/img_card_03.png" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat numquam nostrum mollitia eaque voluptate blanditiis animi explicabo neque labore debitis dignissimos non porro sequi, itaque, quidem modi. Sint, enim animi?</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success">Ler mais+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        <h3>
+                            EDUCAÇÃO FINANCEIRA</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h4>Criptomoeda:</h4>
+                        </div>
+                        <div class="card-subtitle">
+                            <h5>o que é, como funciona e se vale investir</h5>
+                            <img src="./img/img_card_01.jpeg" alt="">
+                        </div>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat numquam nostrum mollitia eaque voluptate blanditiis animi explicabo neque labore debitis dignissimos non porro sequi, itaque, quidem modi. Sint, enim animi?</p>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-success">Ler mais+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
