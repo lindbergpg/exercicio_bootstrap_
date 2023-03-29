@@ -6,66 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio bootstrap</title>
     <link rel="stylesheet" href="./lib/bootstrap.min.css">
-    <style>
-        body {
-            overflow-x: hidden;
-            background-color: #2a2828;
-        }
-
-        h1 {
-            margin: 0;
-            color: #fff;
-        }
-
-        h2 {
-            color: #fff;
-        }
-
-        header {
-            padding: 10px 0;
-            background-color: #2a2828;
-        }
-
-        .navbar {
-            padding: 0;
-        }
-
-        .nav-link {
-            text-align: center;
-        }
-
-        .navbar-nav .nav-link.active {
-            color: #fff;
-        }
-
-        .notc {
-            margin-top: 36px;
-        }
-
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            background-color: #2a2828;
-        }
-
-        .col-4 {
-            margin-bottom: 22px;
-        }
-
-        .card-subtitle img {
-            width: 100%;
-            height: 220px;
-            margin-bottom: 14px;
-            border-radius: 6px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="navbar navbar-expand-lg">
                 <h1>Portal Cripto</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" id="hamb">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
@@ -74,7 +22,7 @@
                             <a href="#" class="nav-link active">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Noticias</a>
+                            <a href="#notc" class="nav-link">Noticias</a>
                         </li>
                     </ul>
                 </nav>
@@ -111,10 +59,10 @@
             </div>
         </div>
     </div>
-    <div class="container notc">
+    <div class="container notc" id="notc">
         <div class="row">
             <h2>Noticias</h2>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6">
                 <div class="card text-bg-dark">
                     <div class="card-header">
                         <h3>EDUCAÇÃO FINANCEIRA</h3>
@@ -136,7 +84,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6">
                 <div class="card text-bg-dark">
                     <div class="card-header">
                         <h3>MERCADO INTERNO</h3>
@@ -158,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6">
                 <div class="card text-bg-dark">
                     <div class="card-header">
                         <h3>BLOCKCHAIN</h3>
@@ -180,7 +128,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6">
                 <div class="card text-bg-dark">
                     <div class="card-header">
                         <h3>
